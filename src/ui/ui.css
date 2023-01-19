@@ -1,0 +1,182 @@
+/* Banner Style */
+.main-banner {
+  background-image: url(../assets/banner.jpg);
+  background-position: center center;
+  background-size: cover;
+  min-height: 380px;
+  border-radius: 23px;
+  padding: 80px 60px;
+}
+.main-banner h2 {
+  color: #fff;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+
+.main-banner h4 {
+  font-size: 45px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.main-banner h4 em {
+  font-style: normal;
+  color: #ec6090;
+}
+.main-button a {
+  font-size: 14px;
+  color: #fff;
+  background-color: #e75e8d;
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 25px;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.main-button a:hover {
+  color: #e75e8d;
+  background-color: #fff;
+}
+
+/* Home section */
+.card-container {
+  background-color: #1f2122;
+  border-radius: 20px;
+}
+.card-container em {
+  color: #e75e8d;
+  font-style: normal;
+  text-decoration: underline;
+}
+.card-container h4 {
+  font-size: 40px;
+  font-weight: 800;
+}
+.heading-section {
+  color: #fff;
+}
+.images {
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 30px;
+}
+.card {
+  border-radius: 30px;
+  background-color: #27292a;
+}
+/* Library section */
+.library .item{
+  border-bottom: 1px solid #27292a;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.library .item ul li {
+  margin-top: 15px;
+}
+
+.library .item ul li img {
+  margin-top: -30px;
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 30px;
+}
+
+.library .item ul li {
+  display: inline-block;
+  width: 17%;
+}
+
+.library .item ul li:first-child {
+  width: 150px;
+}
+
+.library .item ul li:last-child {
+  width: 15%;
+  text-align: right;
+}
+
+.library .item ul li h4 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.library .item ul li span {
+  color: #666;
+  font-size: 15px;
+}
+.library .download-btn {
+  font-size: 14px;
+  background-color: transparent;
+  padding: 12px 30px;
+  display: inline-block;
+  border-radius: 25px;
+  font-weight: 400;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+}
+.library .download-btn:hover {
+  background-color: #fff;
+}
+.library .download-btn a {
+  text-decoration: none;
+}
+
+.library .main-button {
+  text-align: center;
+  margin-bottom: -53px;
+}
+.border-btn{
+  border: 1px solid #ec6090;
+  cursor: pointer;
+}
+.border-btn a{
+  color: #ec6090;
+}
+.no-border{
+  border: 1px solid #666;
+  pointer-events: none;
+}
+.no-border a{
+  color: #666;
+}
+.no-border a:hover{
+  border-color: #666;
+  color: #666;
+  background-color: transparent;
+}
+
+/* Media Query  */
+@media (max-width: 768px) {
+  .library .item ul li,
+  .library .item ul li:first-child,
+  .library .item ul li:last-child {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .library .item ul li {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 992px) {
+  .library .item ul li {
+    width: 48% !important;
+  }
+  .library .item ul li:last-child {
+    text-align: left;
+  }
+}
+@media (max-width: 1200px) {
+  .library .item ul li {
+    width: 16%;
+  }
+}
